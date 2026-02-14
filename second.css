@@ -1,0 +1,117 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: black;
+
+    .nav {
+        height: 15vh;
+        align-items: center;
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        font-weight: bold;
+        font-size: 25px;
+
+        .logo {
+            text-transform: uppercase;
+            color: orange;
+        }
+
+        .elements {
+            display: flex;
+            gap: 20px;
+            text-transform: capitalize;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            a:hover {
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+        height: 77.8vh;
+
+        .left {
+            width: 40%;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: white;
+
+            h3 {
+                font-size: 25px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-transform: capitalize;
+            }
+
+            h1 {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-transform: capitalize;
+                font-size: 50px;
+            }
+
+            h2 {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-transform: capitalize;
+                font-size: 40px;
+            }
+
+            p {
+                font-family: cursive;
+            }
+
+            .btns {
+                display: flex;
+                gap: 20px;
+
+
+                button {
+                    width: 200px;
+                    border-radius: 10px;
+                    background-color: white;
+                    font-size: 20px;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    cursor: pointer;
+
+                }
+
+                button:hover {
+                    background-color: wheat;
+                    transition: 1s;
+                }
+
+            }
+
+            span {
+                color: red;
+            }
+
+        }
+
+        .right {
+            img {
+                width: 350px;
+            }
+            img:hover{
+                transform: scale(1.1);
+                transition: 1s;
+            }
+        }
+    }
+}
